@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800;900&display=swap');
-
+body{
+    overflow-x: hidden;
+}
 ul.nav a:hover{
  color: #FF931E !important;
  }
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -49,6 +52,10 @@ h2 {
 .branco{
     padding: 40px;
     border-bottom: 30px solid #FF931E;
+}
+i{
+    color: #FF931E;
+    font-size: 100px;
 }
 #texto_1{
     font-family: 'Montserrat', sans-serif;
@@ -109,6 +116,25 @@ h2 {
 .Logo{
     width: 200px !important;
     height: auto;
+}
+.teste:hover{
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
+.teste:hover #texto_row {
+    color: #FF931E;
+}
+  
+.teste:hover i {
+    color: #fff !important;
+}
+  
+.teste:hover #texto_row:hover ~ i {
+    color: #FF931E;
+}
+  
+.teste:hover i:hover ~ #texto_row {
+    color: #fff;
 }
 @media (max-width: 767px) {
     h1, h2 {
