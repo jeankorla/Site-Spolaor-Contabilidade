@@ -3,7 +3,7 @@
 ul.nav a:hover{
  color: #FF931E !important;
  }
- h1 {
+h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     color: #fff;
@@ -19,11 +19,18 @@ h2 {
     font-size: 70px;
     padding-top: 10px;
 }
-p{
+.p_cinza{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #303030;
-    text-align: left;
+    text-align: center;
+    font-size: 30px;
+}
+.p_branco{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
     font-size: 30px;
 }
 .Azul_claro{
@@ -38,7 +45,6 @@ p{
 .cinza{
     background-color: #303030 !important;
     padding: 40px;
-    
 }
 .branco{
     padding: 40px;
@@ -73,6 +79,21 @@ p{
     display: flex;
     text-align: center;
     flex-direction: column;
+}
+.linha-laranja {
+    display: inline-block;
+    border-top: 2px solid #FF931E;
+    padding-top: 10px; /* Espaçamento acima da linha */
+    font-size: 30px;
+    color: #FF931E;
+  }
+.centralizado{
+    text-align: center;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #botoes{
    width: 100%;
