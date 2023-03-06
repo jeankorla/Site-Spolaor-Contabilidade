@@ -53,6 +53,9 @@ h2 {
     padding: 40px;
     border-bottom: 30px solid #FF931E;
 }
+.barra{
+    border-bottom: 30px solid #FF931E;
+}
 i{
     color: #FF931E;
     font-size: 100px;
@@ -87,6 +90,13 @@ i{
     text-align: center;
     flex-direction: column;
 }
+.quadrado2 {
+    padding: 40px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
 .linha-laranja {
     display: inline-block;
     border-top: 2px solid #FF931E;
@@ -113,29 +123,47 @@ i{
     background-color: #024A7F;  
     margin-top: 50px;
 }
+.botao_1, .botao_2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    border-radius:  40px 40px 40px;
+    margin-top: 50px;
+    align-items: center;
+    color: #FF931E;
+    background-color: #000000;
+    padding: 10px 20px;
+}
+.botao_1:hover, .botao_2:hover{
+    color: #fff;
+    background-color: #303030;
+    transform: scale(1.05);
+    transition: transform 1.5s ease-in-out;
+}
+.botao-ativo {
+    background-color: #FFA500;
+    color: #FFF;
+  }
 .Logo{
     width: 200px !important;
     height: auto;
 }
-.teste:hover{
+.rowdivs:hover{
     transform: scale(1.2);
     transition: transform 1s ease-in-out;
 }
-.teste:hover #texto_row {
+.rowdivs:hover #texto_row {
     color: #FF931E;
 }
   
-.teste:hover i {
+.rowdivs:hover i {
     color: #fff !important;
 }
   
-.teste:hover #texto_row:hover ~ i {
+.rowdivs:hover #texto_row:hover ~ i {
     color: #FF931E;
 }
-  
-.teste:hover i:hover ~ #texto_row {
-    color: #fff;
-}
+
 @media (max-width: 767px) {
     h1, h2 {
       font-size: 30px;
@@ -155,3 +183,8 @@ i{
     }
 
   }
+
+@keyframes animacao{
+    from{background-color: #FFF;}
+    to{background-color: #FF931E;}
+}
