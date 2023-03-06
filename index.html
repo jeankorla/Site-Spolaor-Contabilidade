@@ -150,7 +150,20 @@
   </div>
 
     <div id="conteudo_1">
-      <p>Conteúdo 1</p>
+      <div class="row seta1" id="secao">
+        <div class="col-sm-3 w-100">
+          <i class="bi bi-arrow-right-circle-fill seta animacao1"></i>
+        </div>
+        <div class="col-sm-3 w-100">
+          <i class="bi bi-arrow-right-circle-fill seta animacao2"></i>
+        </div>
+        <div class="col-sm-3 w-100">
+          <i class="bi bi-arrow-right-circle-fill seta animacao3"></i>
+        </div>
+        <div class="col-sm-3 w-100">
+          <i class="bi bi-check-square-fill seta animacao4"></i>
+        </div>
+      </div>
     </div>
     
 
@@ -163,11 +176,40 @@
 
 
 
-    
+
     <div id="conteudo_2" style="display: none;">
       <p>Conteúdo 2</p>
     </div>
   </div>
+
+  <script>
+    // Seleciona o elemento que deve ser animado
+  const elementoAnimado1 = document.querySelector('.animacao1');
+  const elementoAnimado2 = document.querySelector('.animacao2');
+  const elementoAnimado3 = document.querySelector('.animacao3');
+  const elementoAnimado4 = document.querySelector('.animacao4');
+
+  // Cria uma nova instância do IntersectionObserver
+  const observer = new IntersectionObserver((entradas) => {
+  // Para cada entrada na lista de entradas observadas
+  entradas.forEach((entrada) => {
+    // Se o elemento estiver visível na tela
+    if (entrada.isIntersecting) {
+      // Ativa a animação
+      elementoAnimado1.style.animationPlayState = 'running';
+      elementoAnimado2.style.animationPlayState = 'running';
+      elementoAnimado3.style.animationPlayState = 'running';
+      elementoAnimado4.style.animationPlayState = 'running';
+    }
+  });
+});
+
+// Observa o elemento selecionado
+observer.observe(elementoAnimado1);
+observer.observe(elementoAnimado2);
+observer.observe(elementoAnimado3);
+observer.observe(elementoAnimado4);
+  </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

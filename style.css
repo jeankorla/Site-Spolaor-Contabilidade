@@ -60,6 +60,15 @@ i{
     color: #FF931E;
     font-size: 100px;
 }
+.seta{
+    color: #303030;
+}
+.seta1{
+    padding: 40px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
 #texto_1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -184,7 +193,40 @@ i{
 
   }
 
+.animacao1{
+    animation-name: animacao;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+.animacao2{
+    animation-name: animacao;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+.animacao3{
+    animation-name: animacao;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+.animacao4{
+    animation-name: animacao_verde;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
 @keyframes animacao{
-    from{background-color: #FFF;}
-    to{background-color: #FF931E;}
+    from{color: #303030;}
+    to{color: #FF931E;}
+}
+@keyframes animacao_verde{
+    from{color: #303030;}
+    to{color: #28a745;}
 }
