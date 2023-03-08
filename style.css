@@ -63,6 +63,10 @@ h2 {
 .barra{
     border-bottom: 30px solid #FF931E;
 }
+.star{
+    color: #FF931E !important; 
+    display: inline-block !important;
+}
 i{
     color: #FF931E;
     font-size: 100px;
@@ -123,6 +127,18 @@ i{
 .centralizado{
     text-align: center;
 }
+.centralizado2 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.fundo{
+    background-image: url(img/ondas.png);
+    width: auto;
+    height: 350px;
+}
 .centro{
     display: flex;
     justify-content: center;
@@ -179,6 +195,7 @@ i{
 .rowdivs:hover #texto_row:hover ~ i {
     color: #FF931E;
 }
+
 
 @media (max-width: 767px) {
     h1, h2 {
