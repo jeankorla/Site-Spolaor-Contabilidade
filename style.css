@@ -29,6 +29,13 @@ h2 {
     text-align: center;
     font-size: 30px;
 }
+.p_cinza2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #303030;
+    text-align: center;
+    font-size: 15px;
+}
 .p_branco{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;

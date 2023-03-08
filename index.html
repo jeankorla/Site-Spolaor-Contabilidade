@@ -153,62 +153,82 @@
       <div class="row seta1" id="secao">
         <div class="col-sm-3 w-100">
           <i class="bi bi-arrow-right-circle-fill seta animacao1"></i>
+          <p class="p_cinza">Envio e validação de documentos</p>
+          <p class="p_cinza2">Nesta etapa, iremos encaminhar uma ficha na qual faremos o preenchimento em conjunto.
+             Em seguida, será enviado a lista de documentos que iremos precisar.</p>
         </div>
         <div class="col-sm-3 w-100">
           <i class="bi bi-arrow-right-circle-fill seta animacao2"></i>
+          <p class="p_cinza">Envio e validação de documentos</p>
+          <p class="p_cinza2">Nesta etapa, iremos encaminhar uma ficha na qual faremos o preenchimento em conjunto.
+             Em seguida, será enviado a lista de documentos que iremos precisar.</p>
         </div>
         <div class="col-sm-3 w-100">
           <i class="bi bi-arrow-right-circle-fill seta animacao3"></i>
+          <p class="p_cinza">Envio e validação de documentos</p>
+          <p class="p_cinza2">Nesta etapa, iremos encaminhar uma ficha na qual faremos o preenchimento em conjunto.
+             Em seguida, será enviado a lista de documentos que iremos precisar.</p>
         </div>
         <div class="col-sm-3 w-100">
           <i class="bi bi-check-square-fill seta animacao4"></i>
+          <p class="p_cinza">Envio e validação de documentos</p>
+          <p class="p_cinza2">Nesta etapa, iremos encaminhar uma ficha na qual faremos o preenchimento em conjunto.
+             Em seguida, será enviado a lista de documentos que iremos precisar.</p>
         </div>
       </div>
     </div>
     
-
-
-
-
-
-
-
-
-
-
-
     <div id="conteudo_2" style="display: none;">
-      <p>Conteúdo 2</p>
+      <div class="row seta1" id="secao">
+        <div class="col-sm-4 w-100">
+          <i class="bi bi-arrow-right-circle-fill seta animacao1"></i>
+          <p class="p_cinza">Envio e validação de documentos</p>
+          <p class="p_cinza2">Nesta etapa, iremos encaminhar uma ficha na qual faremos o preenchimento em conjunto.
+             Em seguida, será enviado a lista de documentos que iremos precisar.</p>
+        </div>
+        <div class="col-sm-4 w-100">
+          <i class="bi bi-arrow-right-circle-fill seta animacao2"></i>
+          <p class="p_cinza">Envio e validação de documentos</p>
+          <p class="p_cinza2">Nesta etapa, iremos encaminhar uma ficha na qual faremos o preenchimento em conjunto.
+             Em seguida, será enviado a lista de documentos que iremos precisar.</p>
+        </div>
+        <div class="col-sm-4 w-100">
+          <i class="bi bi-check-square-fill seta animacao4"></i>
+          <p class="p_cinza">Envio e validação de documentos</p>
+          <p class="p_cinza2">Nesta etapa, iremos encaminhar uma ficha na qual faremos o preenchimento em conjunto.
+             Em seguida, será enviado a lista de documentos que iremos precisar.</p>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="centro" style="position: relative;">
+    <p class="linha-laranja centralizado" style="position: absolute; text-align: center !important;">Para a sua Empresa</p>
+    
+    <img src="img/onda.png" alt="Imagem">
   </div>
 
   <script>
-    // Seleciona o elemento que deve ser animado
-  const elementoAnimado1 = document.querySelector('.animacao1');
-  const elementoAnimado2 = document.querySelector('.animacao2');
-  const elementoAnimado3 = document.querySelector('.animacao3');
-  const elementoAnimado4 = document.querySelector('.animacao4');
+    // Seleciona os elementos que devem ser animados
+const elementosAnimados = document.querySelectorAll('.animacao1, .animacao2, .animacao3, .animacao4');
 
-  // Cria uma nova instância do IntersectionObserver
-  const observer = new IntersectionObserver((entradas) => {
+// Cria uma nova instância do IntersectionObserver
+const observer = new IntersectionObserver((entradas) => {
   // Para cada entrada na lista de entradas observadas
   entradas.forEach((entrada) => {
     // Se o elemento estiver visível na tela
     if (entrada.isIntersecting) {
       // Ativa a animação
-      elementoAnimado1.style.animationPlayState = 'running';
-      elementoAnimado2.style.animationPlayState = 'running';
-      elementoAnimado3.style.animationPlayState = 'running';
-      elementoAnimado4.style.animationPlayState = 'running';
+      elementosAnimados.forEach(elemento => {
+        elemento.style.animationPlayState = 'running';
+      });
     }
   });
 });
 
-// Observa o elemento selecionado
-observer.observe(elementoAnimado1);
-observer.observe(elementoAnimado2);
-observer.observe(elementoAnimado3);
-observer.observe(elementoAnimado4);
+// Observa os elementos selecionados
+elementosAnimados.forEach(elemento => {
+  observer.observe(elemento);
+});
   </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
