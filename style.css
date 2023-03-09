@@ -63,10 +63,6 @@ h2 {
 .barra{
     border-bottom: 30px solid #FF931E;
 }
-.star{
-    color: #FF931E !important; 
-    display: inline-block !important;
-}
 i{
     color: #FF931E;
     font-size: 100px;
@@ -135,9 +131,14 @@ i{
     text-align: center;
 }
 .fundo{
-    background-image: url(img/ondas.png);
+    background-image: url(img/onda.png);
     width: auto;
-    height: 350px;
+    height: 380px;
+}
+.fundo2{
+    background-image: url(img/onda_reverse.png);
+    width: auto;
+    height: 380px;
 }
 .centro{
     display: flex;
@@ -194,6 +195,10 @@ i{
   
 .rowdivs:hover #texto_row:hover ~ i {
     color: #FF931E;
+}
+.jean{
+   margin-left: 25%;
+   margin-right: 25%;
 }
 
 
@@ -254,3 +259,6 @@ i{
     from{color: #303030;}
     to{color: #28a745;}
 }
+
+
+
