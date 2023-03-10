@@ -22,6 +22,14 @@ h2 {
     font-size: 70px;
     padding-top: 10px;
 }
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+}
 .p_cinza{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -156,6 +164,18 @@ i{
     background-color: #024A7F;  
     margin-top: 50px;
 }
+#botao_wpp{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    border-radius:  40px 40px 40px;
+    background-color: #28a745;  
+    margin-top: 50px;
+}
+.wpp{
+    font-size: 40px;
+    color: #fff;
+}
 .botao_1, .botao_2{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -196,11 +216,30 @@ i{
 .rowdivs:hover #texto_row:hover ~ i {
     color: #FF931E;
 }
-.jean{
+.card_todo{
+    position: absolute;
+    width: 100%;
+    margin-top: 15%; 
+}
+.card_row{
    margin-left: 25%;
    margin-right: 25%;
+   background-color: #303030;
+   color: #fff;
 }
-
+.card_info{
+    background-color: #FF931E;
+    color: #303030;
+}
+.seta_baixo{
+    font-size: 20px;
+}
+.icon_center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 
 @media (max-width: 767px) {
     h1, h2 {
