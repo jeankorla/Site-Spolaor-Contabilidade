@@ -121,6 +121,13 @@ i{
     text-align: center;
     flex-direction: column;
 }
+.quadrado3{
+    margin-top: 5%;
+    background-color: #303030;
+    border-top: 30px solid #FF931E;
+    border-bottom: 30px solid #FF931E;
+    color: #fff ;
+}
 .linha-laranja {
     display: inline-block;
     border-top: 2px solid #FF931E;
