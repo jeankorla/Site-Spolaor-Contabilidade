@@ -11,8 +11,7 @@ h1 {
     font-weight: 900;
     color: #fff;
     text-align: center;
-    font-size: 80px;
-    padding-top: 10px;
+    font-size: 5.5vw;
 }
 h2 {
     font-family: 'Montserrat', sans-serif;
@@ -87,7 +86,7 @@ i{
 #texto_1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 1.5vw;
     color: white;
     display: flex;
     flex-direction: column;
@@ -125,7 +124,6 @@ i{
     margin-top: 5%;
     background-color: #303030;
     border-top: 30px solid #FF931E;
-    border-bottom: 30px solid #FF931E;
     color: #fff ;
 }
 .linha-laranja {
@@ -160,17 +158,7 @@ i{
     justify-content: center;
     align-items: center;
 }
-#botoes{
-   width: 100%;
-}
-#botao{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 40px;
-    border-radius:  40px 40px 40px;
-    background-color: #024A7F;  
-    margin-top: 50px;
-}
+
 #botao_wpp{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -179,6 +167,7 @@ i{
     background-color: #28a745;  
     margin-top: 50px;
 }
+
 .wpp{
     font-size: 40px;
     color: #fff;
@@ -204,10 +193,7 @@ i{
     background-color: #FFA500;
     color: #FFF;
   }
-.Logo{
-    width: 200px !important;
-    height: auto;
-}
+
 .rowdivs:hover{
     transform: scale(1.2);
     transition: transform 1s ease-in-out;
@@ -247,10 +233,78 @@ i{
     align-items: center;
     width: 100%;
 }
+.icon_footer{
+    font-size: 20px;
+    color: #fff !important;
+    padding: 5px;
+}
+.left-button{
+    position: absolute;
+    top: 65%;
+    left: 2%;
+    font-size: 2vw; /* Tamanho do texto em porcentagem da largura da viewport */
+    background-color: #FF931E;
+    border-radius: 20px;
+    padding: 2.5vw 5vw; /* Padding em porcentagem da largura da viewport */
+    margin-right: 0;
+    max-width: 23%; /* Tamanho máximo em porcentagem da largura da imagem */
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.right-button{
+    position: absolute;
+    top: 65%;
+    left: 38%; /* Posicionado na metade direita da imagem */
+    transform: translateX(-50%);
+    font-size: 2vw;
+    background-color: #0097C4;
+    border-radius: 20px;
+    padding: 2.5vw 5vw;
+    margin-right: 0;
+    max-width: 23%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.left-button-sc{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 3vw; /* Tamanho do texto em porcentagem da largura da viewport */
+    background-color: #024A7F;
+    border-radius: 22px;
+    padding: 1.5vw 5vw; /* Padding em porcentagem da largura da viewport */
+    margin-right: 0;
+    max-width: 30%; /* Tamanho máximo em porcentagem da largura da imagem */
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.right-button-sc{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    font-size: 3vw;
+    background-color: #024A7F;
+    border-radius: 22px;
+    padding: 1.5vw 5vw;
+    margin-right: 0;
+    max-width: 30%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
 
 @media (max-width: 767px) {
     h1, h2 {
-      font-size: 30px;
+      font-size: 35px;
     }
     p{
         font-size: 15px;
@@ -258,14 +312,12 @@ i{
     #texto_1, #texto_2{
         font-size: 12px;
     }
-    #botao{
-        font-size: 20px;
+    .right-button-sc{
+        top: 30%;
     }
-    .Logo{
-        width: 100px !important;
-        margin: 10px;
+    .left-button-sc{
+        top: 30%;
     }
-
   }
 
 .animacao1{
