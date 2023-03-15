@@ -34,21 +34,21 @@ h3{
     font-weight: 700;
     color: #303030;
     text-align: center;
-    font-size: 30px;
+    font-size: 2vw;
 }
 .p_cinza2{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     color: #303030;
     text-align: center;
-    font-size: 15px;
+    font-size: 1.5vw;
 }
 .p_branco{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #fff;
     text-align: center;
-    font-size: 30px;
+    font-size: 3vw;
 }
 .Azul_claro{
     color: #0097C4 !important;
@@ -72,7 +72,7 @@ h3{
 }
 i{
     color: #FF931E;
-    font-size: 100px;
+    font-size: 8vw;
 }
 .seta{
     color: #303030;
@@ -88,16 +88,6 @@ i{
     font-weight: 500;
     font-size: 1.5vw;
     color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: 0;
-}
-#texto_2{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 25px;
-    color: #303030;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -126,13 +116,20 @@ i{
     border-top: 30px solid #FF931E;
     color: #fff ;
 }
-.linha-laranja {
+.linha-laranja{
     display: inline-block;
     border-top: 2px solid #FF931E;
     padding-top: 10px; /* Espaçamento acima da linha */
-    font-size: 30px;
+    font-size: 2vw;
     color: #FF931E;
-  }
+}
+.linha-laranja2{
+    display: inline-block;
+    border-top: 2px solid #FF931E;
+    padding-top: 10px; /* Espaçamento acima da linha */
+    font-size: 2vw;
+    color: #FF931E;
+}
 .centralizado{
     text-align: center;
 }
@@ -159,23 +156,10 @@ i{
     align-items: center;
 }
 
-#botao_wpp{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 40px;
-    border-radius:  40px 40px 40px;
-    background-color: #28a745;  
-    margin-top: 50px;
-}
-
-.wpp{
-    font-size: 40px;
-    color: #fff;
-}
 .botao_1, .botao_2{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 45px;
+    font-size: 4vw;
     border-radius:  40px 40px 40px;
     margin-top: 50px;
     align-items: center;
@@ -195,7 +179,7 @@ i{
   }
 
 .rowdivs:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: transform 1s ease-in-out;
 }
 .rowdivs:hover #texto_row {
@@ -257,8 +241,8 @@ i{
 .right-button{
     position: absolute;
     top: 65%;
-    left: 38%; /* Posicionado na metade direita da imagem */
-    transform: translateX(-50%);
+    left: 28%; /* Posicionado na metade direita da imagem */
+    
     font-size: 2vw;
     background-color: #0097C4;
     border-radius: 20px;
@@ -285,7 +269,6 @@ i{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
-
 .right-button-sc{
     position: absolute;
     top: 20%;
@@ -301,6 +284,33 @@ i{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
+.wpp_botao{
+    display: flex;
+    font-size: 3vw;
+    background-color: #28a745;
+    border-radius: 20px;
+    padding: 1vw 5vw;
+    margin-right: 0;
+    max-width: 50%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.wpp{
+    font-size: 40px;
+    color: #fff;
+    margin-left: 1.5vw;
+}
+a{
+    text-decoration: none !important; /* remove o sublinhado */
+    color: #fff !important; /* usa a cor de texto do elemento pai */
+}
+a:hover{
+    transform: scale(1.05);
+    transition: transform 1.5s ease-in-out;
+}
+
 
 @media (max-width: 767px) {
     h1, h2 {
@@ -318,8 +328,10 @@ i{
     .left-button-sc{
         top: 30%;
     }
+    .teste{
+        margin-top: -10%;
+    }
   }
-
 .animacao1{
     animation-name: animacao;
     animation-duration: 1s;
