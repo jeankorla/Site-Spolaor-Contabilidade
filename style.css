@@ -26,7 +26,7 @@ h3{
     font-weight: 500;
     color: #fff;
     text-align: center;
-    font-size: 40px;
+    font-size: 3vw;
     padding-top: 10px;
 }
 .p_cinza{
@@ -310,6 +310,11 @@ a:hover{
     transform: scale(1.05);
     transition: transform 1.5s ease-in-out;
 }
+.msg{
+    max-width: 100%;
+    height: 12vw;
+}
+
 
 
 @media (max-width: 767px) {
@@ -328,9 +333,22 @@ a:hover{
     .left-button-sc{
         top: 30%;
     }
-    .teste{
-        margin-top: -10%;
+    .centralizado2{
+        margin-top: -30% !important;
     }
+    .recomenda{
+        margin-top: -10% !important;
+    }
+    .grupo{
+        margin-top: 35% !important;
+    }
+    .collapsed .seta_baixo {
+        margin-left: 5px;
+        position: absolute;
+        right: 43vw;
+        top: 50%;
+        transform: translateY(-50%);
+      }
   }
 .animacao1{
     animation-name: animacao;

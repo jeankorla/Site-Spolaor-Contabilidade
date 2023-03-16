@@ -88,11 +88,13 @@
 
     <div class="branco">
       <h2>Escritório de <span class="Azul_escuro">contabilidade certificado</span></h2>
-      <ul>
+
+      <ul class="col-md-12 text-center">
         <p class="p_cinza">Somos especialistas em contabilidade com atuação nacional,
           tornamos a <span class="Laranja">gestão contábil</span>  mais ágil,
           econômica e menos burocrática, através de um processo certificado pelos principais órgãos do setor,
           há mais de <span class="Laranja">25 anos.</span></p>
+  
       </ul> 
     </div>
 
@@ -209,7 +211,7 @@
   <div style="position: relative;">
     <div style="background-color: #303030; display: flex; height: 10vw;"> 
     <p class="linha-laranja2 centralizado2" style=" margin-top: -6vw;">Para a sua Empresa</p>
-    <h2 style="font-size: 4vw; color: #fff; margin-left: 25%; margin-right: 25%; margin-top: 3vw;">QUEM CONTRATA RECOMENDA</p>
+    <h2 class="recomenda" style="font-size: 4vw; color: #fff; margin-left: 25%; margin-right: 25%; margin-top: 3vw;">QUEM CONTRATA RECOMENDA</p>
     </div>
     <div class="row cinza text-center">
       <div class="col-sm rowdivs" style="flex-direction: column; align-items: center;">
@@ -256,7 +258,7 @@
     </div>
 
       <div class="fundo2">
-        <div class="accordion card_todo" id="accordionExample"> 
+        <div class="accordion card_todo grupo" id="accordionExample" > 
 
 
           <div class="card card_row" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -335,10 +337,7 @@
             <br>
             <br>
 
-
-
-  <br>
-  <br>
+ 
   <div class="quadrado" style="border-radius: 20px !important; margin-top: 5%; position: relative;">
     <h1>Ficou com alguma <span class="Laranja">dúvida?</span></h1>
     <h3 style="color: #fff;">Entre em contato com um dos nossos
@@ -362,7 +361,9 @@
   </div>
 
   <div class="row quadrado3" style="padding: 10px;">
-    <h1 style="text-align: center !important;">ENTRE EM CONTATO CONOSCO</h1>
+    <div class="col-md-12 text-center">
+    <h1>ENTRE EM CONTATO CONOSCO</h1>
+  </div>
     <div class="col-md-6">
       <form>
         <div class="form-group">
@@ -378,9 +379,9 @@
           <label for="assunto">Assunto</label>
           <input type="text" class="form-control" id="assunto" placeholder="Assunto">
         </div>
-        <div class="form-group">
+        <div class="form-group" style="">
           <label for="msg">Mensagem:</label>
-        <textarea rows="10" cols="80" maxlength="500" id="msg"></textarea>
+        <textarea class="msg" rows="10" cols="85" maxlength="500" id="msg"></textarea>
       </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
@@ -388,7 +389,7 @@
     <div class="col-md-6">
       <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.4965322979615!2d-46.31150828561781!3d-23.978237283002507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce11ab76a86761%3A0x3d8b4329ea300dc3!2sMarcos%20Spolaor%20Organiza%C3%A7%C3%A3o%20Cont%C3%A1bil!5e0!3m2!1spt-BR!2sbr!4v1678736435215!5m2!1spt-BR!2sbr"
-         width="600" height="450" style="border:0; margin-top: 5%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         width="100%" height="440vw" style="border:0; margin-top: 5%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
@@ -455,22 +456,19 @@
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Products</h6>
+            <h6 class="text-uppercase fw-bold">Sobre Nós</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #FF931E; height: 2px"
                 />
             <p>
-              <a href="#!" class="text-white">MDBootstrap</a>
+              <a href="#!" class="text-white">Sobre a SCCONTAB</a>
             </p>
             <p>
-              <a href="#!" class="text-white">MDWordPress</a>
+              <a href="#!" class="text-white">Central de atendimento</a>
             </p>
             <p>
-              <a href="#!" class="text-white">BrandFlow</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Bootstrap Angular</a>
+              <a href="#!" class="text-white">Spolaor Company</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -478,22 +476,16 @@
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <h6 class="text-uppercase fw-bold">Info</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #FF931E; height: 2px"
                 />
             <p>
-              <a href="#!" class="text-white">Your Account</a>
+              <a href="#!" class="text-white">Abertura de empresa</a>
             </p>
             <p>
-              <a href="#!" class="text-white">Become an Affiliate</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Shipping Rates</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Help</a>
+              <a href="#!" class="text-white">Trocar de contador</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -506,10 +498,12 @@
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #FF931E; height: 2px"
                 />
-            <p> New York, NY 10012, US</p>
-            <p> info@example.com</p>
-            <p> + 01 234 567 88</p>
-            <p> + 01 234 567 89</p>
+            <p>R. Guaiaó, 66 - sala 915 e 916 - Aparecida, Santos - SP, 11035-260</p>
+            <p>Horário de atendimento:
+
+              Segunda à sexta - 08h às 18hs</p>
+            <p> (13) 3361-4324</p>
+            
           </div>
           <!-- Grid column -->
         </div>
