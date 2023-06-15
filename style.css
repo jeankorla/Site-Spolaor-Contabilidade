@@ -142,13 +142,16 @@ i{
 }
 .fundo{
     background-image: url(img/onda.png);
-    width: auto;
-    height: 380px;
+    width: 100%;
+    height: 35vw;
+    background-size: 100% 100%;
+   
 }
 .fundo2{
     background-image: url(img/onda_reverse.png);
-    width: auto;
-    height: 380px;
+    width: 100%;
+    height: 35vw;
+    background-size: 100% 100%;
 }
 .centro{
     display: flex;
@@ -337,7 +340,7 @@ a:hover{
         margin-top: -30% !important;
     }
     .recomenda{
-        margin-top: -10% !important;
+        margin-top: -7% !important;
     }
     .grupo{
         margin-top: 35% !important;
